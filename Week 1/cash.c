@@ -1,5 +1,3 @@
-#include <cs50.h>
-#include <math.h>
 #include <stdio.h>
 
 int main(void)
@@ -8,7 +6,8 @@ int main(void)
 
     do
     {
-        change = get_int("Change owed: ");
+        printf("Change owed: ");
+        scanf("%d", &change);
     }
     while (change < 0);
 

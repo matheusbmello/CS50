@@ -1,4 +1,3 @@
-#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
@@ -7,7 +6,8 @@ int main(void)
 
     do
     {
-        height = get_int("Enter height here: ");
+        printf("Enter height here: ");
+        scanf("%d", &height);
     }
     while (height < 1 || height > 8);
 
